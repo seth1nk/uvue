@@ -33,7 +33,7 @@ app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://dapper-ganache-144f76.netlify.app/',
+    origin: 'https://dapper-ganache-144f76.netlify.app',
     credentials: true,
 }));
 app.use('/css', express.static(path.join(__dirname, 'css')));
